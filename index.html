@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayverse Limited - Cross Connect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #5E5CE6;
+            --secondary-color: #343252;
+            --background-color: #F9F9FF;
+            --text-color: #333;
+            --light-text-color: #6e6e73;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .header {
+            text-align: center;
+            padding: 100px 20px 80px;
+            background: linear-gradient(135deg, var(--primary-color) 0%, #743ad5 100%);
+            color: white;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+        .header p {
+            margin: 10px 0 0;
+            font-size: 1.3em;
+            opacity: 0.9;
+            font-weight: 400;
+        }
+        .section {
+            padding: 80px 0;
+        }
+        .app-intro {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 60px;
+        }
+        .app-icon {
+            width: 180px;
+            height: 180px;
+            border-radius: 35px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+        .app-icon:hover {
+            transform: scale(1.05);
+        }
+        .app-description {
+            max-width: 500px;
+        }
+        .app-description h2 {
+            font-size: 2.8em;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        .app-description p {
+            font-size: 1.1em;
+            color: var(--light-text-color);
+        }
+        .google-play-badge {
+            display: inline-block;
+            margin-top: 25px;
+            transition: transform 0.2s ease-in-out;
+        }
+        .google-play-badge:hover {
+            transform: scale(1.03);
+        }
+        .google-play-badge img {
+            height: 60px;
+        }
+        .features {
+            background-color: #ffffff;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: 700;
+            color: var(--secondary-color);
+            margin-bottom: 60px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+        .feature-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+        }
+        .feature-card i {
+            font-size: 3em;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            display: block;
+        }
+        .feature-card h3 {
+            font-size: 1.4em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--secondary-color);
+        }
+        .feature-card p {
+            color: var(--light-text-color);
+        }
+        .cta-section {
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .cta-section h2 {
+            font-size: 2.2em;
+            font-weight: 700;
+            color: var(--secondary-color);
+        }
+        .footer {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: var(--secondary-color);
+            color: rgba(255, 255, 255, 0.6);
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: opacity 0.2s ease;
+        }
+        .footer a:hover {
+            opacity: 0.8;
+        }
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+    <!-- Using Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>Kayverse Limited</h1>
+            <p>Crafting Digital Experiences, Connecting the World</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <div class="app-intro fade-in">
+                    <!-- IMPORTANT: Replace 'path/to/your/app_icon.png' with the URL to your app icon image -->
+                    <img src="C:\Users\khayy\Desktop\kayverse-website\assets\images\app_icon.png" alt="Cross Connect App Icon" class="app-icon">
+                    <div class="app-description">
+                        <h2>Cross Connect</h2>
+                        <p>
+                            A modern social space to meet new people, share your moments, and spark genuine conversations. Discover a global community at your fingertips.
+                        </p>
+                        <!-- IMPORTANT: Replace '#' with your actual Google Play Store link once the app is live -->
+                        <a href="#" class="google-play-badge">
+                            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section features">
+            <div class="container">
+                <h2 class="section-title fade-in">Everything You Need to Connect</h2>
+                <div class="feature-grid">
+                    <div class="feature-card fade-in">
+                        <i class="fas fa-globe-americas"></i>
+                        <h3>Discover Globally</h3>
+                        <p>Use powerful filters to find and connect with new people from your country or anywhere in the world.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <i class="fas fa-pen-fancy"></i>
+                        <h3>Express Yourself</h3>
+                        <p>Share your story with a beautiful feed of text and photo posts. Engage with the community by liking content.</p>
+                    </div>
+                    <div class="feature-card fade-in">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Chat Privately</h3>
+                        <p>Start secure, one-on-one conversations with image sharing and robust user blocking for your safety.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section cta-section">
+            <div class="container fade-in">
+                <h2 class="section-title">Ready to Join?</h2>
+                <p>Download Cross Connect today and start building your network of friends.</p>
+                <!-- IMPORTANT: Replace '#' with your actual Google Play Store link once the app is live -->
+                <a href="#" class="google-play-badge">
+                    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Kayverse Limited. All Rights Reserved.</p>
+            <p>
+                <!-- IMPORTANT: Create a Privacy Policy page and link it here -->
+                <a href="#">Privacy Policy</a> | 
+                <!-- IMPORTANT: Replace with your support email -->
+                <a href="mailto:support.khaytek@gmail.com">Contact Support</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple fade-in animation on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+
+</body>
+</html>
